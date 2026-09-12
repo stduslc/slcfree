@@ -7,7 +7,7 @@ proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
   server: 188.114.97.6
-  port: 2052
+  port: 2082
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
