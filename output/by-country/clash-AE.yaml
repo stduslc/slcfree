@@ -6,17 +6,30 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 2202f333-f8d6-4e13-a6c7-0b437e42f5e3
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -29,69 +42,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -104,6 +55,98 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  type: vless
+  server: 109.120.155.155
+  port: 444
+  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  type: vless
+  server: 83.147.216.223
+  port: 4433
+  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
+  type: vless
+  server: 128.241.25.3
+  port: 30021
+  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,6 +160,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -130,5 +176,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
 rules:
 - MATCH,PROXIES
