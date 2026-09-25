@@ -30,7 +30,7 @@ proxies:
   ws-opts:
     path: /platform115
     headers:
-      Host: platform115.golnamakcert.top
+      Host: platform115.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
