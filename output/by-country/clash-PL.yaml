@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - xiaohe
+- name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: psf-2.weedly.top
+  server: 70.34.252.154
   port: 80
-  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,34 +16,33 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: stigmata.ir
-- name: 🇸🇪 SE 02 - xiaohe
+      Host: 70.34.252.154
+- name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
+      Host: 70.34.255.101
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - xiaohe
-  - 🇸🇪 SE 02 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
+  - 🇵🇱 PL 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - xiaohe
-  - 🇸🇪 SE 02 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
+  - 🇵🇱 PL 02 - xiaohe
 rules:
 - MATCH,PROXIES
